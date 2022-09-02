@@ -1,0 +1,154 @@
+@import "../../variables.scss";
+
+.header {
+  height: 80px;
+  padding: 12px;
+  .title {
+    color: $colour3;
+    font-family: mrRobot;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 1px 1px 3px $colour2, -1px 1px 3px $colour2,
+      1px -1px 3px $colour2, -1px -1px 3px $colour2, 3px 3px 6px $colour3,
+      -3px 3px 6px $colour3, 3px -3px 6px $colour3, -3px -3px 6px $colour3;
+    * {
+      font-family: mrRobot;
+    }
+    .title-g {
+      animation: gblink 4s ease-in-out infinite;
+      color: $colour3;
+    }
+    .title-a {
+      animation: ablink 6s ease-in-out infinite;
+      color: $colour3;
+    }
+    .title-d {
+      animation: dblink 12s ease-in-out infinite;
+      color: $colour3;
+    }
+  }
+}
+
+@keyframes gblink {
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 1;
+  }
+  87% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 1;
+  }
+}
+
+@keyframes ablink {
+  86% {
+    opacity: 1;
+  }
+  87% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 1;
+  }
+}
+
+@keyframes dblink {
+  39% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  background-color: $colour2;
+  display: flex;
+  flex-wrap: wrap;
+  height: 0;
+  justify-content: space-around;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+
+  transition: 0.3s height ease-in-out, 0.4s box-shadow ease-in-out;
+}
+.navbar-open {
+  height: 60px;
+  box-shadow: 2px 2px 6px $colour2, -2px 2px 6px $colour2, 2px -2px 6px $colour2,
+    -2px -2px 6px $colour2, 6px 6px 12px $colour3, -6px 6px 12px $colour3,
+    6px -6px 12px $colour3, -6px -6px 12px $colour3;
+}
+.navbar-toggle {
+  cursor: pointer;
+  text-align: center;
+}
+
+.link {
+  color: $colour1;
+}
+
+.footer {
+  height: 20px;
+  padding: 2px 2%;
+  text-align: center;
+  .footer-text {
+    font-weight: 800;
+    a {
+      color: $colour3;
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: $colour1;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+.app {
+  background-blend-mode: screen;
+  background-color: rgba($color: $colour2, $alpha: 0.6);
+  background-image: url("./media/background.jpg");
+  background-position: center;
+  background-size: cover;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.routes {
+  height: calc(100vh - 130px);
+  padding: 60px 0;
+}
